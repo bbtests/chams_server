@@ -4,7 +4,7 @@ WORKDIR /app
 
 
 RUN apt-get update -y && apt-get upgrade -y
-RUN apt-get install -y zsh python python3  \
+RUN apt-get install -y zsh python3  \
   && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 ENV PNPM_HOME="/pnpm"
